@@ -4,9 +4,9 @@ import plotly.express as px
 
 class OrganizarDados():
     """Faz o tratamento dos dados e exibe as informações solicitadas para análise"""
-    def __init__(self):
+    def __init__(self, filename):
         """Inicializa as informações necessárias para a análise"""
-        self.filename = 'Vendas'
+        self.filename = filename
         self.lista_de_arquivos = os.listdir(self.filename)
         self.tabela_total = pd.DataFrame()
 
